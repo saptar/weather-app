@@ -3,6 +3,7 @@
 		<h3 class="panel-title">{{ convertToDate({ dt : weatherDay.dt}) | date: dateFormat  }}</h3>
 	</div>
 	<div class="panel-body">
-		Day time temperature : {{ convertToStandard({ dayTimeTemp : weatherDay.temp.day}) }} 
+		<div>Day time temperature : {{ convertToStandard({ dayTimeTemp : weatherDay.temp.day}) }} <span>℃</span> </div>
+		<div>Night time temperature : {{ convertToStandard({ dayTimeTemp : weatherDay.temp.night}) }} <span>℃</span> </div>
 	</div>
 </div>
